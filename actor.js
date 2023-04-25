@@ -35,10 +35,10 @@ export class Actor {
     if (this.actorClass != null) {
       let img = new Image();
       img.src = actorClass.src;
-      console.log(actorClass.src);
       img.onload = function (e) {
         this.actorSprite = actorClass.src;
       };
+      console.log(img);
       this.useColorForActor = false;
     }
   }
